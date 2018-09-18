@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/InsertionSort$binaryInsertionSort.ic" NAME="binaryInsertionSort Coverage Results" MODIFIED="1537284710161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="insertionSort.java" pinned="false" current-in-tab="true">
@@ -69,6 +72,11 @@
             <path>
               <item name="InsertionSort" type="b2602c69:ProjectViewProjectNode" />
               <item name="InsertionSort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InsertionSort" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InsertionSort" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InsertionSort" type="b2602c69:ProjectViewProjectNode" />
@@ -180,7 +188,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298000" />
+    <option name="totallyTimeSpent" value="564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
