@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //201602082 진수연
@@ -82,8 +83,8 @@ public class mergeSort {
     // 결합 : 정렬된 두 개의 배열을 병합해 하나의 정렬된 배열로 만든다
     public static void merge(ArrayList<Integer> tempSort, int p, int r){
         mergeCount++; // merge함수를 호출했으므로 +1해줌
-        ArrayList<Integer> resultSort = new ArrayList<Integer>();
 
+        ArrayList<Integer> resultSort = new ArrayList<Integer>();
         int mid = (p+r)/2;
         int leftIndex = p;
         int rightIndex = mid+1;
@@ -99,16 +100,14 @@ public class mergeSort {
             }
         }while(leftIndex<=mid && rightIndex<=r);
 
-        if(leftIndex<=mid){
-            for(int i = leftIndex; i<=mid; i++){
-                resultSort.add(tempSort.get(leftIndex));
-                leftIndex++;
-            }
-        }else if(rightIndex<=r){
-            for(int i = rightIndex; i<=r; i++){
-                resultSort.add(tempSort.get(rightIndex));
-                rightIndex++;
-            }
+        // 비교하고 남은 부분 저장
+        for(int i = leftIndex; i<=mid; i++) {
+            resultSort.add(tempSort.get(leftIndex));
+            leftIndex++;
+        }
+        for(int i = rightIndex; i<=r; i++) {
+            resultSort.add(tempSort.get(rightIndex));
+            rightIndex++;
         }
 
         int count=0;

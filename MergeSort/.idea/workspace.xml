@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14c4bb5e-76d9-47c4-b29f-f45831059b20" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../InsertionSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InsertionSort/src/binaryInsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/src/binaryInsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InsertionSort/src/insertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/src/insertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threeWayMergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threeWayMergeSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,9 +20,10 @@
       <file leaf-file-name="mergeSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1645">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="-986">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#3155#3164#0" expanded="true" />
               </folding>
             </state>
@@ -31,8 +33,12 @@
       <file leaf-file-name="threeWayMergeSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="408">
+              <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2901#2910#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,8 +64,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/data02.txt" />
-        <option value="$PROJECT_DIR$/src/threeWayMergeSort.java" />
         <option value="$PROJECT_DIR$/src/mergeSort.java" />
+        <option value="$PROJECT_DIR$/src/threeWayMergeSort.java" />
       </list>
     </option>
   </component>
@@ -191,12 +197,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537285011225</updated>
       <workItem from="1537285014863" duration="3697000" />
-      <workItem from="1537323030924" duration="11650000" />
+      <workItem from="1537323030924" duration="12168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15347000" />
+    <option name="totallyTimeSpent" value="15865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -208,11 +214,11 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32987013" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32987013" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18792401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18792401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -243,6 +249,7 @@
         <state relative-caret-position="1462">
           <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#3155#3164#0" expanded="true" />
           </folding>
         </state>
@@ -252,6 +259,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2901#2910#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -262,6 +273,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4804" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hw01_00_201602082_merge.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -269,23 +285,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4804" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="408">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2901#2910#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1645">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="-986">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#3155#3164#0" expanded="true" />
           </folding>
         </state>
