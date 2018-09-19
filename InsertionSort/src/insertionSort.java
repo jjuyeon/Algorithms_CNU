@@ -34,7 +34,7 @@ public class insertionSort {
         }
 
         startTime = System.nanoTime();
-        insertionSort(sort); // 삽입 정렬 실행
+        insertionSort(sort, sort.size()); // 삽입 정렬 실행
         stopTime = System.nanoTime();
 
         // 정렬 결과를 file 쓰기
@@ -60,8 +60,8 @@ public class insertionSort {
     }
 
     // 삽입 정렬 구현 , index(i)=1에서 size-1까지 올라가면서 정렬
-    private static void insertionSort(ArrayList<Integer> tempSort) {
-        for(int i=1; i<tempSort.size(); i++){
+    private static void insertionSort(ArrayList<Integer> tempSort, int size) {
+        for(int i=1; i<size; i++){
             int temp = tempSort.get(i); // index i의 값을 임시 기억장소 temp에 저장
             int tempLocation = i;
 

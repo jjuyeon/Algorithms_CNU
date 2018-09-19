@@ -34,7 +34,7 @@ public class binaryInsertionSort {
         }
 
         startTime = System.nanoTime();
-        binaryInsertionSort(sort); // 삽입 정렬 실행
+        binaryInsertionSort(sort, sort.size()); // 삽입 정렬 실행
         stopTime = System.nanoTime();
 
         // 정렬 결과를 file 쓰기
@@ -60,8 +60,8 @@ public class binaryInsertionSort {
 
     // binary 삽입 정렬 구현
     // binary insertion sort -> key 의 자리를 binary search를 이용해서 찾아서 정렬함.
-    private static void binaryInsertionSort(ArrayList<Integer> tempSort) {
-        for(int i=1; i<tempSort.size(); i++){
+    private static void binaryInsertionSort(ArrayList<Integer> tempSort, int size) {
+        for(int i=1; i<size; i++){
             int key = tempSort.get(i); // index i의 값을 임시 기억장소 temp에 저장
 
             // key의 자리 찾기(binary search 이용)
