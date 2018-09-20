@@ -66,8 +66,8 @@ public class threeWayMergeSort {
 
     // 분할 : 배열의 크기가 1이 될 때까지 계속해서 배열을 셋으로 나눈다 (recursive function으로 구현되어야 한다) - 실습pdf 참고
     public static void threeWayMergeSort(ArrayList<Integer> tempSort, int p, int r){
-        if(tempSort.size()==3){ //만약 배열의 크기가 3이라면
-            merge(tempSort, p, 0,1, r); // 하나의 원소만을 가지는 배열이 3개가 되므로
+        if((r-p+1)==3){ //만약 배열의 크기가 3이라면
+            merge(tempSort, p, p,p+1, r); // 하나의 원소만을 가지는 배열이 3개가 되므로
             return;
         }
         // 배열의 크기가 1이 될 때까지 계속하여 배열을 셋으로 나눈다
