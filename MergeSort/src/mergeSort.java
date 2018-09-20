@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //201602082 진수연
@@ -9,6 +8,7 @@ public class mergeSort {
     final static String file = "data02.txt";
     static ArrayList<Integer> sort = new ArrayList<Integer>();
     static int mergeCount = 0;
+
 
     public static void main(String args[]) {
         long startTime;
@@ -90,15 +90,13 @@ public class mergeSort {
         int rightIndex = mid+1;
 
         // 나눠진 2개의 배열을 비교하여 정렬하는 단계
-        do{
-            if(tempSort.get(leftIndex) <= tempSort.get(rightIndex)){
-                resultSort.add(tempSort.get(leftIndex));
+        while(leftIndex<=mid && rightIndex<=r){
+            boolean leftIndexSave = compare(tempSort, leftIndex, rightIndex, resultSort);
+            if(leftIndexSave)
                 leftIndex++; // leftIndex에 위치하는 key값을 저장하였으므로 인덱스 +1 해줌
-            }else{
-                resultSort.add(tempSort.get(rightIndex));
+            else
                 rightIndex++; // rightIndex에 위치하는 key값을 저장하였으므로 인덱스 +1 해줌
-            }
-        }while(leftIndex<=mid && rightIndex<=r);
+        }
 
         // 비교하고 남은 부분 저장
         for(int i = leftIndex; i<=mid; i++) {
@@ -115,6 +113,18 @@ public class mergeSort {
         for(int i=p; i<=r; i++){
             tempSort.set(i, resultSort.get(count++));
         }
+    }
+
+    // 2개의 key 값을 비교하는 메서드
+    public static boolean compare(ArrayList<Integer> compareSort, int compare1, int compare2, ArrayList<Integer> saveSort){
+        boolean compare1Save = false;
+        if(compareSort.get(compare1) <= compareSort.get(compare2)){ // compare1 값이 작을 때
+            saveSort.add(compareSort.get(compare1)); // compare1 값을 저장
+            compare1Save = true;
+        }else{ // 값이 더 크면
+            saveSort.add(compareSort.get(compare2)); // compare2 값을 저장
+        }
+        return compare1Save;
     }
 
 }
