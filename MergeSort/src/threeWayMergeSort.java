@@ -55,9 +55,10 @@ public class threeWayMergeSort {
             System.exit(1);
         }
 
-        // 실행 시간 출력
-        long finalTime = stopTime-startTime;
-        System.out.println("three way merge sort 실행 시간: "+finalTime);
+        // 실행 시간 출력 (보고서에 작성할 성능 비교를 위한 실행 시간 출력)
+        //long finalTime = stopTime-startTime;
+        //System.out.println("three way merge sort 실행 시간: "+finalTime);
+
         // 파일에 기록하지 않았으므로 출력해서 확인
         //System.out.println("merge() 함수 실행 횟수: "+mergeCount);
         }

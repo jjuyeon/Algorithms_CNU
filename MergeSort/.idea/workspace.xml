@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c4bb5e-76d9-47c4-b29f-f45831059b20" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../InsertionSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InsertionSort/src/binaryInsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/src/binaryInsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InsertionSort/src/insertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InsertionSort/src/insertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/threeWayMergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threeWayMergeSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,12 +21,24 @@
       <file leaf-file-name="threeWayMergeSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#226#235#0" expanded="true" />
-                <element signature="e#3357#3366#0" expanded="true" />
+                <element signature="e#3375#3384#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mergeSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/data02.txt" />
-        <option value="$PROJECT_DIR$/src/mergeSort.java" />
         <option value="$PROJECT_DIR$/src/threeWayMergeSort.java" />
+        <option value="$PROJECT_DIR$/src/mergeSort.java" />
       </list>
     </option>
   </component>
@@ -64,7 +78,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="920" />
     <option name="width" value="1010" />
     <option name="height" value="1090" />
@@ -77,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -99,13 +114,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InsertionSort" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -202,38 +216,41 @@
       <workItem from="1537425905468" duration="2517000" />
       <workItem from="1537435909583" duration="1821000" />
       <workItem from="1537437794244" duration="43000" />
-      <workItem from="1537451113403" duration="1644000" />
+      <workItem from="1537451113403" duration="4065000" />
+      <workItem from="1537495373642" duration="295000" />
+      <workItem from="1537495909292" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43187000" />
+    <option name="totallyTimeSpent" value="45977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4766234" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26233765" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18792401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18792401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32987013" />
+      <window_info anchor="bottom" id="Messages" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,12 +267,56 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#235#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#235#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -277,7 +338,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -299,7 +360,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -311,7 +372,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -333,7 +394,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -355,7 +416,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,7 +438,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,10 +459,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw01_00_201602082_merge.txt">
+    <entry file="file://$PROJECT_DIR$/data02.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="288" lean-forward="true" selection-start-column="288" selection-end-column="288" />
+          <caret column="285" selection-start-column="285" selection-end-column="285" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -412,31 +483,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data02.txt">
+    <entry file="file://$PROJECT_DIR$/hw01_00_201602082_merge.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="285" selection-start-column="285" selection-end-column="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret column="288" lean-forward="true" selection-start-column="288" selection-end-column="288" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threeWayMergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="340">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#235#0" expanded="true" />
-            <element signature="e#3357#3366#0" expanded="true" />
+            <element signature="e#3375#3384#0" expanded="true" />
           </folding>
         </state>
       </provider>

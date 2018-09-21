@@ -54,9 +54,9 @@ public class insertionSort {
             System.exit(1);
         }
 
-        // 실행 시간 출력
-        long finalTime = stopTime-startTime;
-        System.out.println("insertion sort 실행 시간: "+finalTime);
+        // 실행 시간 출력 (보고서에 작성할 성능 비교를 위한 실행 시간 출력)
+        //long finalTime = stopTime-startTime;
+        //System.out.println("insertion sort 실행 시간: "+finalTime);
     }
 
     // 삽입 정렬 구현 , index(i)=1에서 size-1까지 올라가면서 정렬
@@ -66,7 +66,7 @@ public class insertionSort {
             int tempLocation = i;
 
             // temp 값을 좌측 배열에 저장된 수 중 가장 마지막(오른쪽)배열에 저장된 값과 비교 && index범위 제한
-            while(tempSort.get(tempLocation-1) > temp && tempLocation > 0){ // temp의 값이 더 작을 때
+            while(tempLocation > 0 && tempSort.get(tempLocation-1) > temp){ // temp의 값이 더 작을 때
                 tempSort.set(tempLocation, tempSort.get(tempLocation-1)); // 비교한 배열의 값을 오른쪽 인덱스에 저장
                 tempLocation--; // 계속 왼쪽 값과 비교하기 위함
             }

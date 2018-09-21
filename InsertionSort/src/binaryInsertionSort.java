@@ -53,9 +53,9 @@ public class binaryInsertionSort {
             System.err.println(e);
             System.exit(1);
         }
-        // 실행 시간 출력
-        long finalTime = stopTime-startTime;
-        System.out.println("binary insertion sort 실행 시간: "+finalTime);
+        // 실행 시간 출력 (보고서에 작성할 성능 비교를 위한 실행 시간 출력)
+        //long finalTime = stopTime-startTime;
+        //System.out.println("binary insertion sort 실행 시간: "+finalTime);
     }
 
     // binary 삽입 정렬 구현
