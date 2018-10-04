@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class quick {
 
     final static String file = "data04.txt";
-    static ArrayList<Integer> sort = new ArrayList<Integer>();
+    static ArrayList<Integer> sort;
 
     public static void main(String args[]) {
         long startTime;
@@ -21,21 +21,21 @@ public class quick {
         //long finalTime = stopTime - startTime; // 실행 시간 출력
         //System.out.println("quick sort 실행 시간: " + finalTime);
 
-        /*
-        // 임의의 3개 원소의 중간값을 이용한 Quick Sort 실행
+
+        // 랜덤 pivot 값을 이용한 Quick Sort 실행
         readFile();
         startTime = System.nanoTime();
         quickSort_withRandom(sort,0, sort.size()-1);
         stopTime = System.nanoTime();
         writeFile("hw03_00_201602082_quickRandom.txt");
-        finalTime = stopTime - startTime; // 실행 시간 출력
-        System.out.println("quick sort - Random 실행 시간: " + finalTime);
-        */
+        //finalTime = stopTime - startTime; // 실행 시간 출력
+        //System.out.println("quick sort - Random 실행 시간: " + finalTime);
     }
 
     // 정렬되지 않은 file 읽어오기(,를 기준으로 split하여 arrayList에 삽입)
     public static void readFile(){
         try {
+            sort = new ArrayList<Integer>();
             BufferedReader in = new BufferedReader(new FileReader(file)); // data04.txt불러옴
             String line = in.readLine(); // 한줄을 입력받아 읽음
             while (line != null) { // null이 아닐때까지 (파일의 끝까지 읽기)
@@ -87,37 +87,54 @@ public class quick {
     // 전달받은 제일 오른쪽 값과 그를 제외한 부분으로 나누어 값을 비교해 정렬한다.
     public static int partition(ArrayList<Integer> A, int p, int r){
         int pivot = A.get(r);
-        int toRight = p-1;
-        int toLeft = p;
-        for( ; toLeft<r; toLeft++){
-            if(A.get(toLeft) <= pivot){
-                toRight++;
-                swap(A, toRight, toLeft);
+        int left = p-1;
+        int right = p;
+        for( ; right<r; right++){
+            if(A.get(right) <= pivot){
+                left++;
+                swap(A, left, right);
             }
         }
-        toRight++;
-        swap(A, toRight, toLeft);
+        left++;
+        swap(A, left, right);
 
-        return toRight;
+        return left;
     }
 
     // 재귀적으로 파티션을 통해 퀵정렬을 한다.
     public static void quickSort(ArrayList<Integer> A, int p, int r){
-        if(p<r){
+        if(p < r){
             int q = partition(A, p, r);
             quickSort(A, p, q-1);
             quickSort(A, q+1, r);
         }
     }
 
-    /*
-    // 임의의 3개 원소의 중간값을 이용한 Quick Sort 구현
 
+    // 랜덤 pivot 값을 이용한 Quick Sort 구현
+
+    // pivot을 정할 때 제일 오른쪽 값이 아니라 랜덤하게 정한다.
     public static int randomizedPartition(ArrayList<Integer> A, int p, int r){
+        int random = RANDOM(p, r);
+        // 제일 오른쪽 값과 랜덤하게 정해진 값을 바꿈.
+        swap(A, r, random);
+        return partition(A, p, r);
     }
 
+    // 재귀적으로 파티션을 통해 퀵정렬을 한다.
     public static void quickSort_withRandom(ArrayList<Integer> A, int p, int r){
+        if(p < r){
+            int q = randomizedPartition(A, p, r);
+            quickSort_withRandom(A, p, q-1);
+            quickSort_withRandom(A, q+1, r);
+        }
     }
-    */
+
+    // 범위 내의 인덱스 중에서 랜덤으로 인덱스 하나를 정한다.
+    public static int RANDOM(int first, int last){
+        int range = last-first+1;
+        int random = (int)(Math.random() * range);
+        return first + random;
+    }
 
 }
