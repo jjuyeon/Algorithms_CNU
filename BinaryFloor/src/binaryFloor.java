@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // 201602082 진수연
@@ -8,6 +9,7 @@ public class binaryFloor {
         Scanner sc = new Scanner(System.in);
         System.out.print("n을 입력: ");
         long n = sc.nextLong();
+
         int e = binaryFloor(n);
         System.out.println("log_2n보다 크지 않은 최대 정수: "+e);
     }
@@ -26,7 +28,7 @@ public class binaryFloor {
         return mid;
     }
 
-    // e의 값을 찾기 위한 메서드
+    // e의 값을 찾는 작업을 한다.
     public static int check_e(double k){
         int e = 0;
         while(k>=2){
@@ -40,19 +42,33 @@ public class binaryFloor {
     private static int binarySearch(int low, int high, long findKey) {
         int position = (low + high) / 2; // 범위 내에서 중간 값
 
-        if ((long) Math.pow(2,position) == findKey) { // key를 찾으면 바로 리턴
-            return position;
+        if(squareOfTwo(low) == findKey){ // key를 찾으면 바로 리턴
+            return low;
+        }else if(squareOfTwo(high) == findKey){
+            return high;
+        }else if (squareOfTwo(position) == findKey) {
+        return position;
         }
 
         if(high-position == 1){ // 범위가 1 차이 나는 구간까지 좁혀진다면
-            return position; // 해당 위치 바로 찾을 수 있음.
+            long square_position = squareOfTwo(position);
+
+            if(findKey < square_position){
+                return low; // key가 position의 제곱보다 작다면 low가 최대 정수
+            }else if(findKey > square_position){
+                return position; // key가 position보다 크다면 position이 최대 정수
+            }
         }
 
-        if (findKey < (long) Math.pow(2,position)) { // 중간 값이 더 크면
+        if (findKey < squareOfTwo(position)) { // 중간 값이 더 크면
             return binarySearch(low, position, findKey); // 중간 값의 왼쪽 구간을 이진탐색
         }else{ //중간 값이 더 작으면
             return binarySearch(position, high, findKey); // 중간 값의 오른쪽 구간을 이진탐색
         }
     }
 
+    // 2의 n 제곱을 계산한다.
+    private static long squareOfTwo(int n){
+        return (long) Math.pow(2,n);
+    }
 }
