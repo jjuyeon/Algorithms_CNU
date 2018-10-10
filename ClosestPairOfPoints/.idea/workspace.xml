@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e25142f-ac9d-4e0d-acb6-4854fe0bb22c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="65b7131b-0e6c-412f-983d-4a2d965f808e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../BinaryFloor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BinaryFloor/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="binaryFloor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/binaryFloor.java">
+      <file leaf-file-name="ClosestPairOfPoints.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ClosestPairOfPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="2278">
+              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +41,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/binaryFloor.java" />
+        <option value="$PROJECT_DIR$/src/closestPairOfPoints.java" />
+        <option value="$PROJECT_DIR$/src/ClosestPairOfPoints.java" />
       </list>
     </option>
   </component>
@@ -64,23 +65,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="BinaryFloor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BinaryFloor" type="462c0819:PsiDirectoryNode" />
+              <item name="ClosestPairOfPoints" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClosestPairOfPoints" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BinaryFloor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BinaryFloor" type="462c0819:PsiDirectoryNode" />
+              <item name="ClosestPairOfPoints" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClosestPairOfPoints" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -104,12 +105,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="ClosestPairOfPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClosestPairOfPoints" />
+      <module name="ClosestPairOfPoints" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="binaryFloor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binaryFloor" />
-      <module name="BinaryFloor" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -152,7 +153,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.binaryFloor" />
+        <item itemvalue="Application.ClosestPairOfPoints" />
       </list>
     </recent_temporary>
   </component>
@@ -161,20 +162,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e25142f-ac9d-4e0d-acb6-4854fe0bb22c" name="Default" comment="" />
-      <created>1539015303384</created>
+      <changelist id="65b7131b-0e6c-412f-983d-4a2d965f808e" name="Default" comment="" />
+      <created>1539094331338</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539015303384</updated>
-      <workItem from="1539015305269" duration="9941000" />
-      <workItem from="1539075179005" duration="3174000" />
-      <workItem from="1539090706542" duration="2863000" />
-      <workItem from="1539094293382" duration="38000" />
+      <updated>1539094331338</updated>
+      <workItem from="1539094334351" duration="11229000" />
+      <workItem from="1539137177452" duration="259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16016000" />
+    <option name="totallyTimeSpent" value="11488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -201,7 +200,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32987013" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,44 +211,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/binaryFloor.java">
+    <entry file="file://$PROJECT_DIR$/src/ClosestPairOfPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="2448">
+          <caret line="144" column="30" lean-forward="true" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/binaryFloor.java">
+    <entry file="file://$PROJECT_DIR$/src/ClosestPairOfPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/binaryFloor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/binaryFloor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="2278">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
