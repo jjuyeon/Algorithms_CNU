@@ -1,22 +1,35 @@
+import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // 201602082 진수연
 public class Fibonacci {
+    private static ArrayList<Long> arrayList = new ArrayList<Long>(); // fibonacci_array 함수에 사용할 배열
+
     public static void main(String[] args){
         showRun(); // 프로그램의 기능을 설명 & 실행한다.
     }
 
     // 피보나치 수열을 recursion을 사용하여 구현.
     public static long fibonacci_recursion(long n){
-        if(n<2){
+        if(n<2){ //2보다 작으면
             return n;
         }
         return fibonacci_recursion(n-1) + fibonacci_recursion(n-2);
     }
-    // 피보나치 수열을 array를 사용하여 구현.
-    public static void fibonacci_array(long n){
 
+    // 피보나치 수열을 array를 사용하여 구현.
+    public static long fibonacci_array(long n){
+        if(n <= 1){ //0번째와 1번째 인덱스 설정
+            arrayList.add(n);
+            return n;
+        }else{
+            long temp = arrayList.get((int)n-1) + arrayList.get((int)n-2);
+            arrayList.add(temp);
+            return temp;
+        }
     }
+
     // 피보나치 수열을 recursive squaring을 사용하여 구현.
     public static void fibonacci_recursive_sqaring(long n){
 
@@ -25,25 +38,26 @@ public class Fibonacci {
     // 기능에 따라 F(0)부터 F(n)까지 각각의 수행 시간을 측정한 후, 출력한다.
     private static void printRunningTime(int functionNumber, long n){
         long startTime = 0, stopTime = 0;
+        arrayList.clear(); // arrayList 초기화
 
-        System.out.println("---------------------------------------");
+        System.out.println("------------------------------------------------------------------");
         for(int i=0; i<=n; i++) {
             if (functionNumber == 1) {
                 startTime = System.nanoTime();
-                System.out.print("F[" + i + "] = " + fibonacci_recursion(i));
+                System.out.print("F[" + i + "] = " + String.format("%-30s",fibonacci_array(i)));
                 stopTime = System.nanoTime();
-
             } else if (functionNumber == 2) {
-
+                startTime = System.nanoTime();
+                System.out.print("F[" + i + "] = " + String.format("%-30s",fibonacci_array(i)));
+                stopTime = System.nanoTime();
             } else if (functionNumber == 3) {
 
             }
-
-            double sec = (double)(stopTime-startTime)/1000000000;
-            System.out.println("\t\t" + String.format("%.12f",sec) + " sec"); //sec(초)로 단위 변경
+            double sec = (stopTime-startTime)/1000000000.0;
+            System.out.println(String.format("%.12f",sec) + " sec"); //sec(초)로 단위 변경
 
             if((i+1)%10 == 0){
-                System.out.println("---------------------------------------");
+                System.out.println("------------------------------------------------------------------");
             }
         }
     }
@@ -51,12 +65,12 @@ public class Fibonacci {
     // 프로그램의 기능을 출력한다.
     private static void printProgram(){
         System.out.println("**** 연산의 방법은 다음과 같습니다. ****");
-        System.out.println("---------------------------------------");
+        System.out.println("------------------------------------------------------------------");
         System.out.println("1 : Recursion");
         System.out.println("2 : Array");
         System.out.println("3 : Recursive squaring");
         System.out.println("4 : 종료");
-        System.out.println("---------------------------------------");
+        System.out.println("------------------------------------------------------------------");
         System.out.print("수행하고자 하는 연산을 선택해주세요: ");
     }
 
