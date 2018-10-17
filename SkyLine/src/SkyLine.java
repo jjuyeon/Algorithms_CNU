@@ -46,7 +46,7 @@ public class SkyLine {
 
     // max height를 구하여 max height 이하의 높이를 갖는, 감추어진 선은 제외시키는 기능을 한다.
     private static List<Skyline> mergeSkyLine(List<Skyline> skylines1, List<Skyline> skylines2){
-        int currentH1 =0, currentH2 =0, lastMaxH =-1;
+        int currentH1 =0, currentH2 =0, lastMaxH =0;
         List<Skyline> result = new ArrayList<Skyline>();
 
         while(skylines1.size()>0 && skylines2.size()>0){
