@@ -11,6 +11,7 @@ public class SkyLine {
         Building[] building = new Building[n];
         for(int i=0; i<n; i++){
             String line = scanner.nextLine();
+
             StringTokenizer parser = new StringTokenizer(line, ",");
             int left = Integer.parseInt(parser.nextToken());
             int height = Integer.parseInt(parser.nextToken());
@@ -25,7 +26,6 @@ public class SkyLine {
         }
         System.out.println(result.get(result.size()-1).left+","+result.get(result.size()-1).height);
     }
-
 
     // divide & conquer를 사용하여 skyline을 찾는다.
     private static List<Skyline> findSkyLine(Building[] buildings, int s, int e){
@@ -46,7 +46,7 @@ public class SkyLine {
 
     // max height를 구하여 max height 이하의 높이를 갖는, 감추어진 선은 제외시키는 기능을 한다.
     private static List<Skyline> mergeSkyLine(List<Skyline> skylines1, List<Skyline> skylines2){
-        int currentH1 =0, currentH2 =0, lastMaxH =0;
+        int currentH1 =0, currentH2 =0;
         List<Skyline> result = new ArrayList<Skyline>();
 
         while(skylines1.size()>0 && skylines2.size()>0){
@@ -59,11 +59,10 @@ public class SkyLine {
                     maxH = currentH2; // maxH 변경
                 }
 
-                if(lastMaxH != maxH){ // 이전 max height와 현재 max height가 다르다면(현재 max height가 더 크다는 뜻)
-                    lastMaxH = maxH;
-                    result.add(new Skyline(currentX, maxH));
-                } // max height 업데이트하고 line의 정보를 저장한다.
+                int size = skylines1.size();
+                result = append(currentX, maxH,result,size);
                 skylines1.remove(0);
+
             }else{ // skylines2의 left가 더 작을 때
                 int currentX = skylines2.get(0).left;
                 currentH2 = skylines2.get(0).height;
@@ -73,21 +72,51 @@ public class SkyLine {
                     maxH = currentH1; // maxH 변경
                 }
 
-                if(lastMaxH != maxH) { // 이전 max height와 현재 max height가 다르다면(현재 max height가 더 크다는 뜻)
-                    lastMaxH = maxH;
-                    result.add(new Skyline(currentX, maxH));
-                } // max height 업데이트하고 line의 정보를 저장한다.
+                int size = skylines2.size();
+                result = append(currentX, maxH,result,size);
                 skylines2.remove(0);
             }
         }
 
         while(skylines1.size() > 0){ // 나머지 line 정보를 저장한다.
-            result.add(new Skyline(skylines1.get(0).left, skylines1.get(0).height));
+            int size = skylines1.size();
+            result = append(skylines1.get(0).left, skylines1.get(0).height,result,size);
             skylines1.remove(0);
         }
         while(skylines2.size() > 0){
-            result.add(new Skyline(skylines2.get(0).left, skylines2.get(0).height));
+            int size = skylines2.size();
+            result = append(skylines2.get(0).left, skylines2.get(0).height,result,size);
             skylines2.remove(0);
+        }
+        return result;
+    }
+
+    // 결과 배열리스트(result)에 skyline을 담는 기능을 한다.
+    private static List<Skyline> append(int currentX, int maxH, List<Skyline> result, int arrayListSize){
+        if(result.size() == 0){
+            result.add(new Skyline(currentX, maxH));
+        }else{ // result 배열의 사이즈가 0이 아닐때부터 비교
+
+            if(maxH == result.get(result.size()-1).height){ // 현재 max height와 이전 max height가 같다면
+                return result; // skyline이 아니다.
+            }
+
+            if(result.get(result.size()-1).left == currentX){ // 이전left와 현재 left가 같다면 높이 측정
+                Skyline lastSkyline = result.get(result.size()-1);
+                result.remove(lastSkyline); // result 배열의 마지막 인덱스의 원소를 pop하여 마지막 원소인지 검사한다.
+                if(arrayListSize == 1){ // 마지막 원소라면 height는 항상 0이다.
+                    lastSkyline.height = 0;
+                }
+                else{ // 마지막 원소가 아니라면 height를 max height로 업데이트하기 위해 비교한다.
+                    if(lastSkyline.height>maxH){
+                        maxH = lastSkyline.height;
+                    }
+                    lastSkyline.height = maxH;
+                }
+                result.add(lastSkyline);
+                }else{
+                result.add(new Skyline(currentX, maxH));
+            }
         }
         return result;
     }
