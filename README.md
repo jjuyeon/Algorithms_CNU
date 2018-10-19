@@ -1,15 +1,9 @@
-# Algorithms
-- 주마다 해당되는 과제를 branch 별로 정리하여 push함.
+# Algorithms 7주차 과제
 
-----------------------------------------------------------
-2018 2학기 알고리즘 과제 정리
-----------------------------------------------------------
-- [branch_week2] https://github.com/suyeon-9706/Algorithms/tree/week2
+1. Inversion을 count하는 프로그램 구현.
+- 주어진 데이터셋에서 inversion의 개수를 세어 inversion의 개수와 해당 inversion 쌍을 콘솔로 출력하는 프로그램 작성
 
-- [branch_week3] https://github.com/suyeon-9706/Algorithms/tree/week3
-
-- [branch_week4] https://github.com/suyeon-9706/Algorithms/tree/week4
-
-- [branch_week5] https://github.com/suyeon-9706/Algorithms/tree/week5
-
-- [branch_week6] https://github.com/suyeon-9706/Algorithms/tree/week6
+2. Karatsuba Algorithm 구현
+- 두 값을 입력 받아 Karatsuba 알고리즘을 통해 곱셈을 수행
+- Threshold=3으로 설정, 곱해지는 값은 long int로 선언
+- 결과는 콘솔로 출력
