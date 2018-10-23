@@ -35,28 +35,33 @@ public class Karatsuba {
     }
 
     private static long karatsuba(long x, long y){
+        // long x, y의 size 저장
+        int xSize = String.valueOf(x).length();
+        int ySize = String.valueOf(y).length();
 
-        int aSize = String.valueOf(x).length();
-        int bSize = String.valueOf(y).length();
-
-        if(aSize <= Threshold || bSize <= Threshold){
+        // Threshold(3)보다 자릿수가 작으면 일반적인 곱셈 연산을 한다.
+        if(xSize <= Threshold || ySize <= Threshold){
             return x*y;
         }
 
-        long x1 = divideLong(x, 0, aSize/2);
-        long x0 = divideLong(x, aSize/2, aSize);
-        long y1 = divideLong(y, 0, bSize/2);
-        long y0 = divideLong(y, bSize/2, bSize);
+        // 주어진 숫자를 자릿수가 절반이 되도록 나눈다.
+        long x1 = divideLong(x, 0, xSize/2);
+        long x0 = divideLong(x, xSize/2, xSize);
+        long y1 = divideLong(y, 0, ySize/2);
+        long y0 = divideLong(y, ySize/2, ySize);
 
+        // 자릿수에 따른 정수 계산을 한다.
         long z0 = karatsuba(x0,y0);
         long z2 = karatsuba(x1,y1);
         long z1 = karatsuba(x1+x0, y1+y0) -z2 - z0;
 
-        int resultSize = aSize/2;
+        // 위에서 얻은 정수를 결과식에 맞춰 대입하여 결과를 계산한다.
+        int resultSize = xSize/2;
         long result = z2 * (long)Math.pow(10, resultSize*2) + z1 * (long)Math.pow(10, resultSize) + z0;
         return result;
     }
 
+    // 전달받은 start에서 end까지 number를 잘라 반환하는 함수이다.
     private static long divideLong(long number, int start, int end){
         String changeStr = String.valueOf(number);
         String temp = "";
