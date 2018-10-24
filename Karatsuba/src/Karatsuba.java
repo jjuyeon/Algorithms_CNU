@@ -56,8 +56,10 @@ public class Karatsuba {
         long z1 = karatsuba(x1+x0, y1+y0) -z2 - z0;
 
         // 위에서 얻은 정수를 결과식에 맞춰 대입하여 결과를 계산한다.
-        int resultSize = xSize/2;
-        long result = z2 * (long)Math.pow(10, resultSize*2) + z1 * (long)Math.pow(10, resultSize) + z0;
+        if(xSize % 2 == 1){
+            xSize++;
+        }
+        long result = z2 * (long)Math.pow(10, xSize) + z1 * (long)Math.pow(10, xSize/2) + z0;
         return result;
     }
 
