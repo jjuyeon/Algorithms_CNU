@@ -1,15 +1,7 @@
-# Algorithms
-- 주마다 해당되는 과제를 branch 별로 정리하여 push함.
+# Algorithms 8주차 과제
 
-----------------------------------------------------------
-2018 2학기 알고리즘 과제 정리
-----------------------------------------------------------
-- [branch_week2] https://github.com/suyeon-9706/Algorithms/tree/week2
-
-- [branch_week3] https://github.com/suyeon-9706/Algorithms/tree/week3
-
-- [branch_week4] https://github.com/suyeon-9706/Algorithms/tree/week4
-
-- [branch_week5] https://github.com/suyeon-9706/Algorithms/tree/week5
-
-- [branch_week6] https://github.com/suyeon-9706/Algorithms/tree/week6
+1. Dijkstra Algorithm using Minimum Priority Queue 를 사용하여 최단 경로 cost를 계산하는 프로그램 구현.
+	- Minimum Priority Queue를 이용
+	- 프로그램 시작 시 배열에 저장하여 사용
+	- 단계별 최소값인 점과 해당 점의 값을 출력
+	- 단계별 우선순위 큐에 들어있는 점들 출력하고 새로 계산된 점들의 변경 값 출력
