@@ -1,15 +1,6 @@
-# Algorithms
-- 주마다 해당되는 과제를 branch 별로 정리하여 push함.
+# Algorithms 9주차 과제
 
-----------------------------------------------------------
-2018 2학기 알고리즘 과제 정리
-----------------------------------------------------------
-- [branch_week2] https://github.com/suyeon-9706/Algorithms/tree/week2
-
-- [branch_week3] https://github.com/suyeon-9706/Algorithms/tree/week3
-
-- [branch_week4] https://github.com/suyeon-9706/Algorithms/tree/week4
-
-- [branch_week5] https://github.com/suyeon-9706/Algorithms/tree/week5
-
-- [branch_week6] https://github.com/suyeon-9706/Algorithms/tree/week6
+1. Prim’s algorithm을 통해 MST를 만드는 프로그램을 구현.
+	- 𝑒𝑑𝑔𝑒의 탐색 순서를 화면 출력
+	- 각각의 가중치와 그 총합을 계산하여 출력
+	- Minimum Priority Queue를 사용하여 구현
