@@ -1,15 +1,7 @@
-# Algorithms
-- 주마다 해당되는 과제를 branch 별로 정리하여 push함.
+# Algorithms 12주차 과제
 
-----------------------------------------------------------
-2018 2학기 알고리즘 과제 정리
-----------------------------------------------------------
-- [branch_week2] https://github.com/suyeon-9706/Algorithms/tree/week2
-
-- [branch_week3] https://github.com/suyeon-9706/Algorithms/tree/week3
-
-- [branch_week4] https://github.com/suyeon-9706/Algorithms/tree/week4
-
-- [branch_week5] https://github.com/suyeon-9706/Algorithms/tree/week5
-
-- [branch_week6] https://github.com/suyeon-9706/Algorithms/tree/week6
+1. Dynamic programming을 이용하여 sequence alignment를 찾는 프로그램 구현.
+	- 서열 x, y간 최적의 비용을 계산하여 행렬로 표현
+	- 행렬의 각 원소가 계산 될 때마다 화면에 출력
+	- 아직 계산되지 않은 공간은 "-"를 출력
+	- 최종적으로 나오는 최적 조합을 출력
