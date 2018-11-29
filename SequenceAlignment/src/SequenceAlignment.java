@@ -116,19 +116,19 @@ public class SequenceAlignment {
                 alignmentX.insert(0, x.charAt(j - 1));
                 alignmentY.insert(0, y.charAt(i - 1));
                 i--; j--;
-            } // 대각선에서 계산된 값이 최적의 값인지 확인 -> 모두 정렬된 경우
+            } // 대각선에서 계산된 값이 최적의 값인지 확인 true-> 모두 정렬된 경우
             else if (Integer.parseInt(matrix[i - 1][j]) - gap_penalty == Integer.parseInt(matrix[i][j])) {
                 matrix[i][j] = '*'+matrix[i][j];
                 alignmentY.insert(0, y.charAt(i - 1));
                 alignmentX.insert(0, "-");
                 i--;
-            } // 왼쪽에서 계산된 값이 최적의 값인지 확인 -> x에 gap이 있을 경우
+            } // 위쪽에서 계산된 값이 최적의 값인지 확인 true-> x에 gap이 있을 경우
             else if (Integer.parseInt(matrix[i][j - 1]) - gap_penalty == Integer.parseInt(matrix[i][j])) {
                 matrix[i][j] = '*'+matrix[i][j];
                 alignmentX.insert(0, x.charAt(j - 1));
                 alignmentY.insert(0, "-");
                 j--;
-            } // 위쪽에서 계산된 값이 최적의 값인지 확인 -> y에 gap이 있을 경우
+            } // 왼쪽에서 계산된 값이 최적의 값인지 확인 true-> y에 gap이 있을 경우
         }
         matrix[i][j] = '*'+matrix[i][j];
 
