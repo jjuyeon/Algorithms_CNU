@@ -1,15 +1,7 @@
-# Algorithms
-- 주마다 해당되는 과제를 branch 별로 정리하여 push함.
+# Algorithms 13주차 과제
 
-----------------------------------------------------------
-2018 2학기 알고리즘 과제 정리
-----------------------------------------------------------
-- [branch_week2] https://github.com/suyeon-9706/Algorithms/tree/week2
-
-- [branch_week3] https://github.com/suyeon-9706/Algorithms/tree/week3
-
-- [branch_week4] https://github.com/suyeon-9706/Algorithms/tree/week4
-
-- [branch_week5] https://github.com/suyeon-9706/Algorithms/tree/week5
-
-- [branch_week6] https://github.com/suyeon-9706/Algorithms/tree/week6
+1. Dynamic programming을 이용하여 Matrix Chain Multiplication을 수행하는 프로그램  구현.
+	- input data는 행렬 곱 연산이 가능함을 전제로 함
+	- 입력 행렬의 크기는 사용자로부터 입력 받음
+	- m배열, s배열을 각각 출력
+	- 완성된 배열을 분석하여 전체 행렬곱 연산 수행 시 최적의 연산 횟수(optimal solution)와 연산 순서(optimal parens)를 괄호로 표현
